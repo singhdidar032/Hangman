@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hangman.HangManPage">
+
+    <!--<Grid x:Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Grid.Row="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0" Grid.Row="0" x:Name="Picture" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,0,0,0" />
+
+            <Grid Grid.Column="1" Grid.Row="0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+
+
+                <BoxView Color="#FF3399" Grid.Column="0" Grid.Row="0" />
+
+                <Grid Grid.Column="0" Grid.Row="1" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="0" Grid.Row="0" BackgroundColor="white" Text=" " x:Name="MyLabel1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" />
+                    <Label Grid.Column="1" Grid.Row="0" BackgroundColor="white" Text=" " x:Name="MyLabel2" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" />
+                    <Label Grid.Column="2" Grid.Row="0" BackgroundColor="white" Text=" " x:Name="MyLabel3" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" />
+                    <Label Grid.Column="3" Grid.Row="0" BackgroundColor="white" Text=" " x:Name="MyLabel4" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" />
+                    <Label Grid.Column="4" Grid.Row="0" BackgroundColor="white" Text=" " x:Name="MyLabel5" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" />
+
+                </Grid>
+
+                <BoxView Color="#FF3399" Grid.Column="0" Grid.Row="2" />
+                
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Column="0" Grid.Row="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Grid.Row="0" Text="a" x:Name="btn1" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="1" Grid.Row="0" Text="b" x:Name="btn2" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="2" Grid.Row="0" Text="c" x:Name="btn3" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="3" Grid.Row="0" Text="d" x:Name="btn4" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="4" Grid.Row="0" Text="e" x:Name="btn5" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="5" Grid.Row="0" Text="f" x:Name="btn6" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="6" Grid.Row="0" Text="g" x:Name="btn7" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="7" Grid.Row="0" Text="h" x:Name="btn8" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="8" Grid.Row="0" Text="i" x:Name="btn9" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="0" Grid.Row="1" Text="j" x:Name="btn10" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="1" Grid.Row="1" Text="k" x:Name="btn11" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="2" Grid.Row="1" Text="l" x:Name="btn12" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="3" Grid.Row="1" Text="m" x:Name="btn13" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="4" Grid.Row="1" Text="n" x:Name="btn14" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="5" Grid.Row="1" Text="o" x:Name="btn15" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="6" Grid.Row="1" Text="p" x:Name="btn16" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="7" Grid.Row="1" Text="q" x:Name="btn17" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="8" Grid.Row="1" Text="r" x:Name="btn18" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="0" Grid.Row="2" Text="s" x:Name="btn19" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="1" Grid.Row="2" Text="t" x:Name="btn20" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="2" Grid.Row="2" Text="u" x:Name="btn21" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="3" Grid.Row="2" Text="v" x:Name="btn22" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="4" Grid.Row="2" Text="w" x:Name="btn23" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="5" Grid.Row="2" Text="x" x:Name="btn24" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="6" Grid.Row="2" Text="y" x:Name="btn25" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="7" Grid.Row="2" Text="z" x:Name="btn26" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+            <Button Grid.Column="8" Grid.Row="2" Text=" " x:Name="btn27" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" FontSize="Micro" ScaleX="1.4" />
+
+        </Grid>
+
+    </Grid>-->
+
+</ContentPage>

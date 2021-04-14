@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hangman.InstructionPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="INSTRUCTIONS" TextColor="Green" FontSize = "20" TextDecorations="Underline" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Label Text=" Guess letters one at a time to solve the word puzzle. Click a letter to guess it, or type with your keyboard. Each time you solve a word, the balloons you save are added to your score. Up for a challenge? Increase the difficulty and you'll have fewer balloons to hang on to!"    
+                   LineBreakMode="WordWrap"
+        VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Label Text="HANGMAN TIPS AND STRATEGIES" TextColor="Green" FontSize = "20" TextDecorations="Underline" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Label Text=" Try guessing the vowels - A good strategy is to begin by guessing a few vowels. With only five vowels in the English alphabet, you'll quickly fill up those blanks without losing. It's just a list of the most common letters used in English, in order of frequency. 'E' is the most commonly used letter, 'T' is second-most common, etc. So try guessing those letters first. Don't forget your Js and Zs - The letters J and Z always trip people up. They're both fairly rare and it's not always obvious when you need one to complete a word or phrase. Don't guess a Z or a J at the very beginning, but keep them in mind as you play."                 
+                   LineBreakMode="WordWrap"
+        VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
